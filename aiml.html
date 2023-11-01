@@ -31,15 +31,15 @@ stop = 'J'<br>
 path = list(start)<br>
 <br>
 def func():<br>
-    Max = 999<br>
+    max = 999<br>
     nxt = ' '<br>
     if path[-1] not in graph:<br>
         print("Path not found")<br>
         exit()<br>
     for reach in graph[path[-1]]:<br>
-        if (reach[1]+hue[reach[0]]<Max) and (reach[0] not in path):<br>
+        if (reach[1]+hue[reach[0]]<max) and (reach[0] not in path):<br>
             nxt = reach[0]<br>
-            Max = reach[1]+hue[reach[0]]<br>
+            max = reach[1]+hue[reach[0]]<br>
     if nxt in path or nxt == ' ':<br>
         print("Path not found")<br>
         exit()<br>
