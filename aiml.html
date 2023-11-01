@@ -37,7 +37,7 @@ def func():<br>
         print("Path not found")<br>
         exit()<br>
     for reach in graph[path[-1]]:<br>
-        if (reach[1]+hue[reach[0]]<mx) and (reach[0] not in path):<br>
+        if (reach[1]+hue[reach[0]] < mx) and (reach[0] not in path):<br>
             nxt = reach[0]<br>
             mx = reach[1]+hue[reach[0]]<br>
     if nxt in path or nxt == ' ':<br>
